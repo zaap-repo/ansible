@@ -3,7 +3,7 @@
   hosts: aws
   tasks: 
   - name: install nginx server
-    apt:
+    package:
       name: nginx
       state: latest
   - name: start nginx server
